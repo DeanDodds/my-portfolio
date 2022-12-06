@@ -1,0 +1,74 @@
+/* Generic styles */
+:root {
+  --color-1: #0B00CF;
+  --color-2: #300A6E;
+  --color-3: #FF2A2B;
+  --color-4: #C10A28;
+}
+
+
+
+a {
+  text-decoration: none ;
+}
+
+/* Button Styles */  
+.btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  align-self: center;
+  line-height: 1;
+  margin: 20px 0px;
+  padding: 1.2em 2.8em;
+  text-transform: uppercase;
+}
+
+.block-colour-btn {
+  border: 1px solid var(--color-1);
+  color: #fff;
+  box-shadow: 0 0 40px 40px var(--color-1) inset, 0 0 0 0 var(--color-1);
+  transition: all 150ms ease-in-out;
+}
+
+.block-colour-btn:hover {
+  box-shadow: 0 0 10px 0 var(--color-1) inset, 0 0 10px 4px var(--color-1);
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+.btn:active {
+  animation: pulse 0.15s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--color-1); }
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+}
+
+span {
+  border-right: 1px solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  30% {
+    border-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 763px) {
+    .small-screen-center {
+      text-align: center;
+    }
+  }
+  
+  
