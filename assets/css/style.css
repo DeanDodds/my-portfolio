@@ -1,9 +1,9 @@
 /* Generic styles */
 :root {
-  --color-1: #0B00CF;
-  --color-2: #300A6E;
-  --color-3: #FF2A2B;
-  --color-4: #C10A28;
+  --color-1: #4F76F6;
+  --color-2: #77F2A1;
+  --color-3: #1F2B37;
+  --color-4: #F9F9F9;
 }
 
 
@@ -52,9 +52,15 @@ a {
 /* Hero Section */
 .hero {
     height: 100vh;
+    background-color: var(--color-4);
+    color: var(--color-3);
 }
 
-span {
+.color-text {
+  color: var(--color-1)
+}
+
+#type-here {
   border-right: 1px solid;
   animation: caret 1s steps(1) infinite;
 }
