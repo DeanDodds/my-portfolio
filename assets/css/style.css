@@ -6,7 +6,9 @@
   --color-4: #F9F9F9;
 }
 
-
+.white {
+  color: var(--color-4)
+}
 
 a {
   text-decoration: none ;
@@ -16,14 +18,22 @@ a {
 .btn {
   box-sizing: border-box;
   background-color: transparent;
-  border-radius: 0.6em;
+  border: 2px solid var(--color-4);
+  color: var(--color-4);
   cursor: pointer;
   align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1;
-  margin: 20px 0px;
+  margin: 20px 0;
   padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
+
 
 .block-colour-btn {
   border: 1px solid var(--color-1);
@@ -38,12 +48,33 @@ a {
   font-weight: 700;
 }
 
-.btn:active {
-  animation: pulse 0.15s;
-  box-shadow: 0 0 0 2em transparent;
+.clear-btn {
+  color: var(--color-4);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
 }
-
-
+.clear-btn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: var(--color-4);
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+.clear-btn:hover {
+  color: var(--color-1);
+}
+.clear-btn:hover:after {
+  width: 110%;
+}
+  
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--color-1); }
 }
@@ -71,9 +102,34 @@ a {
   }
 }
 
+/* About me section */
+#about {
+  background-color: var(--color-1);
+  min-height: 80vh;
+}
+
+.about-img-container{
+  width: 100%;
+}
+
+#about-img {
+ height: 20em;
+ width: 20em;
+}
+
+
 @media only screen and (max-width: 763px) {
     .small-screen-center {
       text-align: center;
+    }
+
+    #about-img {
+      width: 100%;
+      height: auto;
+     }
+
+    .about-img-container{
+      margin-bottom: 50px;
     }
   }
   
