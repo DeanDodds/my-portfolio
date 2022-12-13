@@ -43,4 +43,32 @@ document.addEventListener('DOMContentLoaded',function(event){
   });
 
   // Scroll Reveal
-  ScrollReveal().reveal('.appear',);
+  ScrollReveal().reveal('.appear', {
+    distance: '60px',
+    duration: 2000,
+    origin: 'left',
+  });
+
+  ScrollReveal().reveal('.header', {
+    delay: 375,
+    duration: 2000,
+    distance: '60px',
+    origin: 'top',
+    reset: true,
+});
+
+  ScrollReveal().reveal('.in-from-the-left', {
+    delay: 375,
+    duration: 2500,
+    distance: '60px',
+    origin: 'left',
+    reset: true,
+});
+  
+  ScrollReveal().reveal('.in-from-the-right', {
+    delay: 375,
+    duration: 2500,
+    distance: '60px',
+    origin: 'right',
+    reset: true,
+});
