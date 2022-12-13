@@ -146,6 +146,12 @@ ul li{
   height: auto;
 }
 
+/* Contact Section */
+#contact {
+  background-color: var(--color-1);
+  height: 40vh;
+}
+
 @media only screen and (max-width: 763px) {
     .small-screen-center {
       text-align: center;

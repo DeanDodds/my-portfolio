@@ -45,7 +45,7 @@
                         class="anim-typewriter">check this out</span>
                 </h1>
                 <div class="d-flex justify-content-center justify-content-md-start">
-                    <a href="#" class="block-colour-btn btn" type="button">About Me!</a>
+                    <a href="#about" class="block-colour-btn btn" type="button">About Me!</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
 
     <!-- Projects -->
     <section>
-        <div class="container">
+        <div class="container mb-5">
             <div class="row">
                 <h2 class="text-center header p-5 mb-4 rounded-3">My Projects</h2>
             </div>
@@ -128,7 +128,8 @@
                 <div class="col-sm-12 col-md-5 offset-md-2 in-from-the-right">
                     <a href="https://deandodds.github.io/milestoneprojectone/" target="_blank"
                         aria-label="Union Sqaure Session Page" rel="noopener">
-                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project1.png" alt="">
+                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project1.png"
+                            alt="Union Sqaure sessions website Screenshots">
                     </a>
                 </div>
             </div>
@@ -170,7 +171,8 @@
                 <div class="col-sm-12 col-md-5 offset-md-2 in-from-the-right">
                     <a href="https://deandodds.github.io/MilestoneProject2/" target="_blank"
                         aria-label="snooker counter" rel="noopener">
-                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/profect2.png" alt="">
+                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/profect2.png"
+                            alt="Snooker counter app Screenshots">
                     </a>
                 </div>
             </div>
@@ -217,7 +219,8 @@
                 <div class="col-sm-12 col-md-5 offset-md-2 in-from-the-right">
                     <a href="https://dean-milestone-project-3.herokuapp.com/" target="_blank" aria-label="Recipe app"
                         rel="noopener">
-                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project3.png" alt="">
+                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project3.png"
+                            alt="Recipe App website Screenshots">
                     </a>
                 </div>
             </div>
@@ -268,7 +271,8 @@
                 <div class="col-sm-12 col-md-5 offset-md-2 in-from-the-right">
                     <a href="https://north-yeast-brewing.herokuapp.com/" target="_blank"
                         aria-label="North Yeast Brewing" rel="noopener">
-                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project4.png" alt="">
+                        <img data-tilt data-tilt-max="50" class="project-image" src="assets/images/project4.png"
+                            alt="North Yeast Brewing website screenshots">
                     </a>
                 </div>
             </div>
@@ -276,13 +280,74 @@
     <!-- ,/Projects -->
 
     <!-- Contact -->
-    <section>
+    <section id="contact" class="white">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <h2 class="header p-5 mb-4 rounded-3">Get in touch</h2>
+                </div>
+                <div class="in-from-the-bottom">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at eius pariatur tenetur natus
+                        recusandae nihil nulla unde voluptatem nam.</p>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn clear-btn">Email
+                        Me</button>
+                    <a href="tel:+07595922823" class="btn clear-btn">Call me
+                        Me</a>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- ,/Contact-->
 
     <!-- Footer -->
     <footer></footer>
     <!-- ./Footer -->
+
+    <!-- Contact Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lname" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="telephone" class="form-label">Telephone</label>
+                            <input type="tel" class="form-control" id="telephone">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="8"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="block-colour-btn btn" type="submit">Submit form</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn light-bg-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./Contact Modal -->
 
 
 
