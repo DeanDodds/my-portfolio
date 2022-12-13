@@ -14,6 +14,17 @@ a {
   text-decoration: none ;
 }
 
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+ul li{
+  display: inline;
+  padding: 5px;
+  font-size: 32px;
+}
+
 /* Button Styles */  
 .btn {
   box-sizing: border-box;
@@ -48,6 +59,7 @@ a {
   font-weight: 700;
 }
 
+.light-bg-btn,
 .clear-btn {
   color: var(--color-4);
   position: relative;
@@ -55,6 +67,8 @@ a {
   z-index: 1;
   transition: color 150ms ease-in-out;
 }
+
+.light-bg-btn:after,
 .clear-btn:after {
   content: '';
   position: absolute;
@@ -68,11 +82,19 @@ a {
   z-index: -1;
   transition: width 150ms ease-in-out;
 }
+
 .clear-btn:hover {
   color: var(--color-1);
 }
+
+.light-bg-btn:hover:after,
 .clear-btn:hover:after {
   width: 110%;
+}
+
+.light-bg-btn {
+  color: var(--color-1);
+  border: 1px solid var(--color-1)
 }
   
 @keyframes pulse {
@@ -117,6 +139,12 @@ a {
  width: 20em;
 }
 
+/* Project Section */
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
 
 @media only screen and (max-width: 763px) {
     .small-screen-center {
