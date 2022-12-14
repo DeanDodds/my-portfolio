@@ -152,6 +152,32 @@ ul li{
   height: 40vh;
 }
 
+/* Footer */
+footer {
+  background-color: var(--color-4);
+}
+
+footer a {
+  color: var(--color-3);
+}
+
+footer a:hover {
+  color: var(--color-1);
+}
+
+a .rotate-icon {
+  float: left;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+a:hover .rotate-icon {
+  -webkit-transform: rotateZ(720deg);
+  -moz-transform: rotateZ(720deg);
+  transform: rotateZ(720deg);
+}
+
 @media only screen and (max-width: 763px) {
     .small-screen-center {
       text-align: center;
@@ -166,5 +192,7 @@ ul li{
       margin-bottom: 50px;
     }
   }
+
+
   
   
